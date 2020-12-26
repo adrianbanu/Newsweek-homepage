@@ -1,0 +1,937 @@
+figure{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #f4f5f6;
+}
+
+@font-face {
+  font-family: 'Genericons';
+  src: url('font/genericons-regular-webfont.woff');
+}
+
+.container{
+  max-width: 1310px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.main{
+  margin-top: 54px;
+  background-color: white;
+  max-width: 1310px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*****    Header      *****/
+
+.page-header{
+  margin-bottom: 20px;
+}
+
+.top-header{
+  height: 95px;
+  background-color: #f72210;
+  color: white;
+  width: 100%;
+}
+
+.location{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.location img{
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+}
+
+.location:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.location-date{
+  color: white;
+}
+
+.right-arrow{
+  font-size: 25px;
+}
+
+.logo-big{
+  height: 60px;
+  width: 396px;
+}
+
+.logo-big a,
+.logo a{
+  fill: white;
+}
+
+.logo{
+  height: 20px;
+  width: 131px;
+  top: 8px;
+}
+
+.subscribe-nav{
+  font-size: 18px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.subscribe-nav a:hover{
+  text-decoration: none;
+}
+
+.subscribe-x{
+  color: #f72210;
+  background-color: #fff;
+}
+
+.sign-in:hover{
+  color: white;
+}
+
+.subscribe-x:hover{
+  color: #f72210;
+}
+
+.bottom-header{
+  top: 95px;
+  width: 100%;
+  padding: 13px 0px;
+  background-color: white;
+}
+
+.right-arrow-hide{
+  font-size: 30px;
+  display: none;
+  color: rgba(0,0,0,.55);
+}
+
+.nav-link{
+  font-size: 19px;
+  color: #000;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 0;
+}
+
+.vertical-line{
+  height: 24px;
+  width: 1px;
+  background-color: #d9d9d9;
+}
+
+.nav-link:hover{
+  color: #f72210;
+}
+
+.bh-list{
+  width: 100%;
+  padding-right: 100px;
+}
+
+input[type=text] {
+  width: 80px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(https://g.newsweek.com/www/images/icon-search-glass.svg);
+  background-size: 20px 20px;
+  background-position: right; 
+  background-repeat: no-repeat;
+  color: yellow;
+}
+
+::placeholder {
+  color: rgba(0,0,0,.55);
+  font-size: 19px;
+  font-weight: 100;
+}
+
+.rectangle{
+  position: absolute;
+  top: 95px;
+  right: 0;
+  content: "";
+  display: block;
+  width: 78px;
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+  z-index: 20;
+}
+
+/*****      page top      *****/
+
+.category-title{
+  color: rgba(3,3,3,.4);
+  padding-bottom: 11px;
+}
+
+.story-photo img{
+  width: 100%;
+}
+
+.category-news{
+  background-color: rgba(255,255,255,.9);
+  padding: 8px 15px 9px;
+  text-transform: uppercase;
+  color: #f72210;
+  font-weight: bold;
+  bottom: 0;
+  left: 0;
+}
+
+.news-title h3{
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.news-title a{
+  color: #000;
+}
+
+.news-title a:hover{
+  text-decoration-color: #f72210;
+}
+
+.news-preview{
+  font-size: 15px;
+  color: #333333;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.story-holder-secondary{
+  flex: 1;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.category-news-secondary{
+  background-color: #c2d4d7;
+  font-family: "Helvetica Neue","Helvetica",Arial,sans-serif;
+  font-size: 13px;
+  color: #272727;
+  bottom: 0;
+  left: 0;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.category-news-secondary:hover{
+  background-color: #272727;
+  color: #c2d4d7;
+}
+
+.news-title-secondary h3{
+  font-size: 20px;
+  line-height: 22px;
+  font-family: Lora, serif;
+}
+
+.news-title-secondary a{
+  color: #272727;
+}
+
+.news-title-secondary a:hover{
+  text-decoration: none;
+}
+
+.news-preview-secondary{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(39,39,39,.5);
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.story-holder-more{
+  border-top: 1px solid #ddd;
+  padding-top: 14px;
+  margin-bottom: 25px;
+}
+
+.story-photo-more{
+  height: 95px;
+  width: 95px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.story-photo-more img{
+  width: 100%;
+}
+
+.news-title-more a{
+  color: #000000;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.news-title-more a:hover{
+  text-decoration-color: #f72210;
+}
+
+.new-preview-more{
+  font-size: 15px;
+  line-height: 20px;
+  color: #333333;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.story-holder-opinion{
+  padding-bottom: 10px;
+}
+
+.story-photo-opinion img{
+  width: 63px;
+  height: 63px;
+}
+
+.news-title-opinion a{
+  color: #000000;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.news-title-opinion a:hover{
+  color: #f72210;
+  text-decoration: none;
+}
+
+.nto-author{
+  color: #555555;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.debate-red{
+  border-top: 4px solid #f92859;
+}
+
+.debate-blue{
+  border-top: 4px solid #1c87fb;
+}
+
+.debate-article figure{
+  width: 95px;
+  height: 95px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.img-1{
+  background-image: url(https://d.newsweek.com/en/full/1582305/trump-pence.webp?w=397&h=265&f=65e4a9b105cd32e463e05605a367256e);
+}
+
+.img-2{
+  background-image: url(https://d.newsweek.com/en/full/1582345/donald-trump.webp?w=397&h=265&f=21d8dff2b4bf4c46ddb7af32a02f858d);
+}
+
+.debate-article-title{
+  font-size: 17px;
+  color: #000;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.debate-author{
+  margin-top: 2px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.debate-author span{
+  color: #555;
+  font-weight: normal;
+}
+
+.debate-author img{
+  top: -17px;
+  right:0;
+  width: 63px;
+  height: 63px;
+}
+
+.debate-vs{
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font: bold 14px/40px "Roboto Condensed",sans-serif;
+  text-align: center;
+  margin: 14px auto 18px;
+}
+
+.latest-news-story{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.latest-news-story img{
+  height: 95px;
+  width: 95px;
+  margin-right: 15px;
+}
+
+.latest-news-article a{
+  font-size: 17px;
+  color: #000;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.latest-news-article a:hover{
+  text-decoration: none;
+  color: #f72210;
+}
+
+.newsletter-signup{
+  max-width: 300px;
+  margin: 30px auto 30px;
+  border: 1px solid #e5e5e5;
+  background-color: #f4f5f6;
+  padding: 20px;
+}
+
+.logo-sign{
+  font: bold 19px/19px "Roboto Condensed",sans-serif;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.newsweek-red-icon{
+  display: inline-block;
+  width: 29px;
+  height: 28px;
+  background: url(images/newsweek-red.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.sign-up{
+  display: inline-block;
+  padding: 10px 10px 10px 12px;
+  color: white;
+  font: bold 18px/18px "Roboto Condensed",sans-serif;
+  text-transform: uppercase;
+  background-color: #666;
+  margin-bottom: 10px;
+}
+
+.sign-up:hover{
+  text-decoration: none;
+  color: white;
+  background-color: #999;
+}
+
+.update-preference a{
+  color: #333;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.update-preference a:hover{
+  text-decoration: none;
+}
+
+.right-arrow-small{
+  font-size: 15px;
+  letter-spacing: -1px;
+}
+
+/*****      IN THE MAGAZINE       *****/
+
+.leading-article figure img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.month-issue{
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 33px;
+  color: #f72210;
+  text-transform: uppercase;
+  padding: 0 10px;
+  background-color: rgba(255,255,255,.9);
+}
+
+.all-feature{
+  text-transform: uppercase;
+  background-color: #f4f5f6;
+  padding: 10px 10px 10px 12px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000;
+}
+
+.all-feature:hover{
+  text-decoration: none;
+  color: #000;
+  background-color: #dbdcdd;
+}
+
+.all-feature::after{
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  background-image: url(https://g.newsweek.com/www/images/icon-arrow-right-black.svg);
+  color: black;
+}
+
+.n-magazine-photo{
+  position: relative;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-1{
+  background-image: url(https://d.newsweek.com/en/full/1582382/fe-whitmer-banner.webp?w=466&h=311&l=52&t=45&q=90&f=8e32ab6b0456788b57a6b9ebd6b281bf);
+}
+
+.photo-2{
+  background-image: url(https://d.newsweek.com/en/full/1582550/fe-whitmer-q.webp?w=466&h=311&l=40&t=43&q=90&f=3a04771e849065ff652402c4dd0333ac);
+}
+
+.photo-3{
+  background-image: url(https://d.newsweek.com/en/full/1579624/bronx-nyc-hospital-tent-coronavirus-march-2020.webp?w=466&h=311&q=90&f=36a1e5404c7d245dc3d11e18ba778436);
+}
+
+.photo-4{
+  background-image: url(https://d.newsweek.com/en/full/1579490/coronavirus-pandemic-covid-19-new-york.webp?w=466&h=311&q=90&f=9dcb631881b3d1da85b177f53f0fe88c);
+}
+
+.photo-5{
+  background-image: url(https://d.newsweek.com/en/full/1581592/cul-the-last-dance-banner.webp?w=466&h=311&l=64&t=52&q=90&f=3d5db0a981677ca610a3170abbc9428d);
+}
+
+.photo-6{
+  background-image: url(https://d.newsweek.com/en/full/1581931/cul-uncharted-books-banner.webp?w=466&h=311&q=90&f=761db87ab1263b6a0614fe17874fc744);
+}
+
+.photo-7{
+  background-image: url(https://d.newsweek.com/en/full/1581225/cul-cbd-mad-tasty-6-pack.webp?w=591&h=394&f=4e01377db4e066f2d46721c7eeebb481);
+}
+
+.n-magazine-category{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #f72210;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.n-magazine-category span:first-of-type{
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+  display: inline-block;
+}
+
+.n-magazine-title{
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.n-magazine-title:hover{
+  color: #000;
+  text-decoration-color: #f72210;
+}
+
+/*****      Editor's pick   *****/
+
+
+.big-category{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f72210;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.big-category:hover{
+  text-decoration: none;
+  color: #f72210;
+}
+
+.us-titles{
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 22px;
+  color: black;
+  font-weight: bold;
+}
+
+.us-titles:hover{
+  text-decoration-color: #f72210;
+  color: black;
+}
+
+.us-titles-small{
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 21px;
+  color: black;
+  font-weight: bold;
+}
+
+.us-titles-small:hover{
+  color: #f72210;
+  text-decoration: none;
+}
+
+.sn-title{
+  color: #f72210;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+  font-weight: bold;
+}
+
+/*****     Subscribe & Newsletter   *****/
+
+.subscribe, .newsletter{
+  margin-bottom: 70px;
+}
+
+.subscribe-content{
+  padding: 30px;
+  height: 100%;
+  background-color: #f4f5f6;;
+}
+
+.subscribe-part1{
+  padding-bottom: 13px;
+  padding-right: 90px;
+  
+}
+
+.subscribe-first-photo{
+  width: 170px;
+  height: 228px;
+}
+
+.subscribe-first-photo img{
+  width: 100;
+}
+
+.subscribe-part2{
+  padding-left: 30px;
+}
+
+.subscribe-second-photo{
+  width: 170px;
+  height: 228px;
+  top: 13px;
+  left: 80px;
+}
+
+.subscribe-title{
+  margin-bottom: 15px;
+  line-height: 28px;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+.subscribe-subtitle{
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 25px;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.subscribe-part2 span, .newsletter-part2 span{
+  display: inline-block;
+  background-color: #f72210;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.subscribe-part2 span:after, .newsletter-part2 span:after{
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  background: url(https://g.newsweek.com/www/images/icon-arrow-right.svg) center/contain no-repeat;
+}
+
+.newsletter-content{
+  height: 100%;
+}
+
+.newsletter-content figure img{
+  object-fit: cover;
+  max-width: 191px;
+  min-height: 100%;
+  height: 210px;
+}
+
+.newsletter-part2{
+  padding: 30px;
+  border: 1px solid #ebebeb;
+}
+
+.n-magazine, .editors-pick, .us, .world, .business, .tech-science, .culture, .sports{
+  margin-bottom: 30px;
+}
+
+/*****      Footer      *****/
+
+footer{
+  margin-top: 2px;
+  background-color: white;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.inside-footer{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer-logo{
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+  margin-bottom: 6px;
+}
+
+.footer-logo a{
+  fill: #f72210;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-year{
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #666;
+  font-family: Arial,Helvetica,sans-serif;
+  margin-bottom: 6px;
+}
+
+.footer-down{
+  font-size: 14px;
+  line-height: 15px;
+  color: #666;
+  padding-top: 6px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.footer-down a{
+  color: #666;
+}
+
+.footer-down a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.footer-down li{
+  border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin: 6px 0;
+    margin-right: 10px;   
+}
+
+.footer-social ul{
+  font-family: 'Genericons';
+}
+
+.footer-social ul a{
+  font-size: 1.625rem;
+  line-height: 1.5rem;
+  color: #666;
+}
+
+.footer-social ul li{
+  margin-right: 0.75rem;
+}
+
+.fi-facebook{
+  font-size: 22px !important;
+}
+
+.fi-facebook::before {
+  content: '\f203';
+  
+}
+
+.fi-twitter {
+  font-size: 22px !important;
+}
+
+.fi-twitter::before {
+  content: '\f202';
+}
+
+.fi-instagram {
+  font-size: 22px !important;
+}
+
+.fi-instagram::before {
+  content: '\f215';
+}
+
+.fi-tumblr {
+  font-size: 22px !important;
+}
+
+.fi-tumblr::before {
+  content: '\f214';
+}
+
+.fi-linkedin {
+  font-size: 22px !important;
+}
+
+.fi-linkedin::before {
+  content: '\f207';
+}
+
+
+/*****  media queries *****/
+
+@media (max-width: 991px) {
+  .location{
+    margin-left: 150px;
+  }
+
+  .location-date{
+    height: 37px;
+  }
+
+  header{
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+  }
+
+  .top-header{
+    height: 50px;
+    align-items: flex-end;
+  }
+
+  .subscribe-nav {
+    align-self: center;
+  }
+  
+  .bottom-header{
+    top: 50px;
+    width: 20%;
+    right: 0;
+    z-index: 10;
+  }
+
+  .bh-list{
+    background-color: white;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    height: calc(100vh - 50px);
+    align-items: flex-start!important;
+    padding: 10px 20px 10px 20px;
+    justify-content: flex-start!important;
+    box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+  }
+
+  .main{
+    margin-top: 52px;
+  }
+
+  .vertical-line{
+    display: none;
+  }
+
+  .right-arrow-hide{
+    display: block;
+  }
+
+  .bh-list li:last-child { 
+    order: -1; 
+  }
+
+  input[type=text]{
+    background-position: right; 
+    width: 100%;
+  }
+
+  .nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 35px;
+  }
+
+  .rectangle{
+    display: none;
+  }
+
+  .newsletter-content{
+    height: auto;
+    flex:none;
+  }
+
+  .newsletter-part2{
+    flex:1;
+  }
+
+}
